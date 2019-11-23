@@ -1,0 +1,106 @@
+1.Complete the following code:
+class Employer
+{
+		provides()
+		{
+		
+		
+		}
+}
+
+class Employee
+{
+public static void main(String[] args)
+	{
+
+		emp.provides();
+		System.out.println(sal);
+	}
+}
+
+2. Complete the code to get the following output:
+
+Expected Output:
+I am driver and I drive the car.
+
+class Driver
+{
+
+}
+
+class Car
+{
+
+}
+
+3. What will be the output of the following code?
+class SquareMain 
+{
+    public static void main(String[] args) 
+	{
+        int result=0;
+        square(); 
+        System.out.println("Squared value of 10 is: " + result);
+    }
+
+          public int square() {
+		  int result = 10 * 10;
+            return result;
+    }
+
+}
+
+4. What will be the output of the following code?
+
+class StudentInfo 
+{
+	int id;
+	String name;
+	
+    public static void main(String[] args) 
+	{
+        String s;
+		StudentInfo sinfo = new StudentInfo();
+        s = sinfo.displayInfo(); 
+        System.out.println("Student Information:  " + s);
+    }
+
+          public displayInfo() 
+		  {
+			id = 100;
+			name = "Guldu";
+            return null;
+		  }
+}
+
+5. Define three methods for each and every line of output by completing the following code:
+
+Expected Output:
+
+Guldu is eating Vegetables.
+Guldu is driving his car.
+Guldu is sitting on chair.
+
+class Student
+{
+String name = "Guldu";
+		Vegetables eating()
+		{
+		Vegetables v = new Vegetables();
+		System.out.println("Guldu is eating Vegetables.")
+		return v;
+		}
+}
+
+class Vegetables
+{
+
+}
+
+class StudentAction
+{
+public static void main()
+{
+
+}
+}

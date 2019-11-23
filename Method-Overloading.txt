@@ -1,0 +1,346 @@
+1. Method signature consists of
+a) Method Name, Return Type and Number Of Parameters
+b) Access Modifier, Method Name and Types Of Parameters
+c) Method Name, Number Of Parameters, Types Of Parameters and Order Of Parameters
+d) Return Type, Access Modifier and Order Of Parameters
+
+
+2. In the below Class X, is ‘method’ properly overloaded?
+
+    class X
+    {
+        int method(int i, int d)
+        {
+            return i+d;
+        }
+        
+        static int method(int i, double d)
+        {
+            return (int)(i+d);
+        }
+        
+        double method(double i, int d)
+        {
+            return i+d;
+        }
+        
+        static double method(double i, double d)
+        {
+            return i+d;
+        }
+    }
+
+3. What is the output of the following code snippet?
+
+public class Test
+{
+static void testMethod(int a)
+{
+System.out.println("Integer");
+}
+static void testMethod(Long l)
+{
+System.out.println("Long");
+}
+
+public static void main(String[] args)
+{
+testMethod(null);
+}
+}
+
+4. What is the output of the following code snippet?
+
+public class Possibility {
+	
+	String test;
+
+	static void add(int a, int b)
+	{
+
+		System.out.println(a+b);
+	}
+	
+	private void subtract(int a, int b)
+	{
+		this.test = "Test";
+		System.out.println(a-b);
+	}
+	
+	final void test(String s)
+	{
+		this.test = "Test";
+		System.out.println(s);
+	}
+	
+	static void add(double c, double d)
+	{
+		System.out.println(c+d);
+	}
+	
+	private void subtract(long a, long b)
+	{
+		System.out.println(a-b);
+	}
+	
+	final void test(int a)
+	{
+		System.out.println(a);
+	}
+	
+	final void test(Integer a)
+	{
+		System.out.println(a);
+	}
+	public static void main(String[] args) {
+		Possibility p = new Possibility();
+		add(12.5, 10.5);
+		add(10, 23);
+		p.subtract(10, 5);
+		p.subtract(12L, 12L);
+		p.test(5);
+		p.test("Welcome");
+		p.test(20);
+	}
+
+}
+
+
+5. What is the output of the following code snippet?
+
+public class Aim
+{
+	public int sum(int a, int b){return a+b;}
+	public double sum(int a, int b) {return a+b;}
+	public double add(String s, int a, double c) {return a*c;}
+	public double add(String s, double d, int k) {return a*c;}
+	public static void main(String[] args) {
+		Aim amb = new Aim();
+		amb.add("Amrit", 10, 10);
+	}
+}
+
+6.  In a class, One method has 4 overloaded forms. All have different access modifiers (private, default, protected and public). Is that method properly overloaded?
+
+7. What is the output of the following program?
+
+    class A
+    {
+        public A(int i)
+        {
+            System.out.println(1);
+        }
+        
+        public A()
+        {
+            this(10);
+            
+            System.out.println(2);
+        }
+        
+        void A()
+        {
+            A(10);
+            
+            System.out.println(3);
+        }
+        
+        void A(int i)
+        {
+            System.out.println(4);
+        }
+    }
+    public class MainClass 
+    {    
+        public static void main(String[] args)
+        {
+            new A().A();
+        }
+    }
+
+8. How do compiler differentiate overloaded methods from duplicate methods?
+
+9. Constructor overloading is also one form of the polymorphism. Yes or No?
+
+10. In the below class, is constructor overloaded or is method overloaded?
+    
+	public class A
+    {
+        public A()
+        {
+     
+        }
+        void A()
+        {
+     
+        }
+    }
+
+11. Can overloaded method be overrided?
+
+12. Write a java code for the following scenario
+
+Create a class named 'PrintNumber' to print various numbers of different datatypes by creating different methods 
+with the same name 'printn' having a parameter for each datatype.
+
+13. Write a java code for the following scenario
+
+Create a class to print the area of a square and a rectangle. The class has two methods with the same name 
+but different number of parameters. The method for printing area of rectangle has two parameters which are length 
+and breadth respetively while the other method for printing area of square has one parameter which is side of square. 
+
+14. What is the output of the following code snippet?
+public class Test 
+{ 
+    public int getData() //getdata() 1 
+    { 
+        return 0; 
+    } 
+    public long getData() //getdata 2 
+    { 
+        return 1; 
+    } 
+    public static void main(String[] args) 
+    { 
+        Test obj = new Test(); 
+        System.out.println(obj.getData());     
+    } 
+} 
+
+a) 1
+b) 0
+c) Runtime error
+d) Compilation error
+
+15. What is the output of the following code snippet?
+
+public class Parent 
+
+{
+Parent(Integer k)
+{
+  System.out.println("I will be executed");
+}
+
+Parent(int j)
+{
+  System.out.println("I am gonna get executed");
+}
+
+public static void main(String[] args)
+{
+  Parent pa = new Parent(10);
+}
+}
+
+16. What is the output of the following code snippet?
+
+public class Parent 
+
+{
+Parent(Integer k)
+{
+  System.out.println("I will be executed");
+}
+
+Parent(double j)
+{
+  System.out.println("I am gonna get executed");
+}
+
+public static void main(String[] args)
+{
+  Integer j = new Integer(20);
+  int i = Integer.parseInt("125");
+  Parent p = new Parent(j);
+  Parent k;
+  k = new Parent(i);
+}
+}
+
+17. What is the output of the following code snippet?
+
+public class Test
+{
+static void testMethod(int a)
+{
+System.out.println("Integer");
+}
+static void testMethod(Long l)
+{
+System.out.println("Long");
+}
+static void testMethod(String S)
+{
+System.out.println(s);
+}
+public static void main(String[] args)
+{
+String s = null;
+testMethod(s);
+}
+}
+
+18. What is the output of the following code snippet?
+
+public class Test
+{
+static void testMethod(Number num)
+{
+System.out.println(num);
+}
+static void testMethod(Integer num)
+{
+System.out.println(num);
+}
+
+public static void main(String[] args)
+{
+testMethod(null);
+testMethod(200);
+}
+}
+
+19. What is the output of the following code snippet?
+
+public class Demo
+{
+public static void main (String[] args)
+{
+testM(1);
+}
+private static Integer testM(Integer number)
+{
+System.out.println("Integer Return Type");
+return number;
+}
+private static Number testM(Integer number)
+{
+System.out.println("Number Return Type");
+return number;
+}
+}
+
+20. What is the output of the following code snippet?
+
+public class Demo
+{
+public static void main (String[] args)
+{
+testM(1);
+testM("100");
+}
+private static Integer testM(int number)
+{
+System.out.println("Integer Return Type");
+return number;
+}
+private static Number testM(String number)
+{
+Number num = new Integer("21");
+System.out.println("Number Return Type");
+return num;
+}
+}
+
+

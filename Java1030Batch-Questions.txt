@@ -1,0 +1,191 @@
+﻿Questions:
+
+1. What is the output of the following code?
+ 
+class Increment 
+{
+ public static void main(String args[]) 
+  {        
+    int true = 3;
+    System.out.print(++true * 8);
+  } 
+}
+
+2. What is the output of the following code?
+
+class Main_Class$ 
+ {
+  public static void main(String args[])
+   {
+    int x = 9;
+	if (x == 9) 
+	 { 
+	  int x = 8;
+	  System.out.println(x);
+     }
+   } 
+ }
+ 
+3. Which of the following is a valid declaration of an object of class Box?
+a) Box obj = new Box();
+b) Box obj = new Box;
+c) obj = new Box();
+d) new Box obj;
+
+4 What is  stored in the reference 'obj' in following lines of code?
+	Box obj;
+	Box box = new Box();
+
+5.What is the return type of a method that does not return any value?
+a) int
+b) float
+c) void
+d) double
+
+6.Which of the following is an entity having same name as that of it’s class?
+a) finalize
+b) delete
+c) class
+d) constructor
+
+7.What is the extension of java code files?
+a) .class
+b) .java
+c) .txt
+d) .js
+
+8.What is the extension of java byte code files?
+a) .class
+b) .java
+c) .txt
+d) .js
+
+9.Which of these operators is used to allocate memory for an object?
+a) malloc
+b) alloc
+c) new
+d) give
+
+10.Attribute or properties of an object is defined as
+a) State
+b) Method
+c) Behavior
+d) Procedures
+
+11.A default constructor has
+a) has no arguments and has no return type
+b) has no return type only
+c) has one argument but no return type
+d) has two arguments
+
+12. What is the output of the following code
+
+class Water
+{
+}
+class Pump
+{
+  Water gives()
+  {
+    return Water;
+  }
+}
+
+13. What is the output of the following code
+
+class Ticket
+{
+ int ticket;
+}
+
+class Conductor
+{
+ Ticket issues()
+ {
+   Ticket ticket = new Ticket();
+   return ticket;
+ }
+}
+
+14. What is the output of the following code
+
+class Atm
+{
+ Money gives()
+ {
+   Money m = new Money();
+   return m;
+ }
+}
+
+15. What is the output of the following code
+
+class Milk
+{
+}
+
+class 1Cow
+{
+ Milk gives()
+  {
+    Milk mlk = new Milk;
+	return mlk;
+  }
+}
+
+16. Find the association types of the following objects
+
+a) Heart and Human body
+b) Shoe and Leg
+c) Shirt and Button
+d) Car and Engine
+e) Student and Institution
+
+17. Identify the associated objects and owner objects from the following pair
+
+a) Heart and Human body
+b) Shoe and Leg
+c) Shirt and Button
+d) Car and Engine
+e) Student and Institution
+
+
+18. Pursuing everything in the form of object is called as ___________________
+
+19. To create _________, __________ is required.
+
+20. An object box can be created without the class Box (True/False).
+
+21. A class Tiger can be created without the object tiger (True/False).
+
+22. Identify the works that is carried out by the java compiler
+a) Checks for syntax 
+b) Checks for logical errors
+d) Generates byte code
+e) executes the java program
+f) generates .java file and .class file
+
+22. Identify the syntactical error in the following
+a) Long l = 2342342523234l;
+b) int k = 234234;
+c) double d = 2342.23.34;
+d) double t = 234111;
+e) float f = 23422.34;
+
+23. Object can only be created in the same class in the program (True/False).
+
+24. new is the method that is used to create an object (True/False)
+
+25. Identify the mistakes in the following
+a) class Main{}
+b) class Tree(){}
+c) class _Tree{}
+d) Class Tree_$
+e) void main(){return 123;}
+f) double values(){return 123.34f;}
+
+
+
+
+
+
